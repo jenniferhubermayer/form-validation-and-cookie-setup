@@ -1,0 +1,164 @@
+@mixin flexElement($flex-wrap, $gap, $justify-content){
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content;
+    flex-wrap: $flex-wrap;
+    gap: $gap
+}
+
+// GENERAL
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// COLORS
+
+$red: #FF002E;
+$grey: #C4C4C4;
+$lightPurple: #8985A8;
+$funkyPurple: #6C63FF;
+$darkPurple: #3F3D56;
+$darkestPurple: #2F2E41;
+
+// FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+// MAIN
+
+html{
+    color: $lightPurple;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    background-color: $darkPurple;
+}
+
+button{
+    background-color: $funkyPurple;
+    color: $darkestPurple;
+    border-radius: 10px;
+    padding: 15.86px 28.54px;
+    border: none;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $darkPurple;
+        color: $funkyPurple;
+    }
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+#modal{
+    @include flexElement(none, none, center);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(229, 229, 229, 0.0555);
+    backdrop-filter: blur(1.5px);
+    #-input{
+        @include flexElement(wrap, 30px, center);
+        height: auto;
+        width: 80%;
+        background-color: $lightPurple;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        padding: 60px 0;
+    h2{
+        color: $darkestPurple;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 79px;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        }
+    .field-wrapper{
+        width: 60%;
+        position: relative;
+    }
+    input{
+        background-color: $grey;
+        border: none;
+        font-weight: inherit;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 10px 23px 17px 23px;
+        width: 100%;
+        }
+    .error-marker{
+        color: $red;
+        position: absolute;
+        right: -20px;
+        top: 25%;
+        display: none;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #submit-modal{
+        width: 60%;
+        text-align: center;
+        margin-top: 11px;
+        }
+    #emptyFieldAlert{
+        color: $red;
+        width: 60%;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        }
+    }
+}
+
+nav{
+    @include flexElement(nowrap, unset, space-between);
+    margin: 50px 122px 109px 122px;
+    line-height: 26px;
+    a{
+        color: $red;
+    }
+    div{
+        @include flexElement(wrap, unset, space-between);
+        width: 50%;
+    }
+}
+
+main{
+    @include flexElement(unset, unset, unset);
+    img{
+        width: 50%;
+    }
+    article{
+        width: 50%;
+        h1{
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 92px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 28px;
+            line-height: 37px;
+        }
+    }
+    #submit-secret-page{
+        margin-top: 76px;
+        &:hover{
+        background-color: $lightPurple;
+        }
+    }
+}

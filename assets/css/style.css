@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #8985A8;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+  background-color: #3F3D56;
+}
+
+button {
+  background-color: #6C63FF;
+  color: #2F2E41;
+  border-radius: 10px;
+  padding: 15.86px 28.54px;
+  border: none;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: #3F3D56;
+  color: #6C63FF;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: none;
+  gap: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(229, 229, 229, 0.0555);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+}
+#modal #-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: auto;
+  width: 80%;
+  background-color: #8985A8;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 60px 0;
+}
+#modal #-input h2 {
+  color: #2F2E41;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 79px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+#modal #-input .field-wrapper {
+  width: 60%;
+  position: relative;
+}
+#modal #-input input {
+  background-color: #C4C4C4;
+  border: none;
+  font-weight: inherit;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 10px 23px 17px 23px;
+  width: 100%;
+}
+#modal #-input .error-marker {
+  color: #FF002E;
+  position: absolute;
+  right: -20px;
+  top: 25%;
+  display: none;
+  font-size: 30px;
+  line-height: 40px;
+}
+#modal #-input #submit-modal {
+  width: 60%;
+  text-align: center;
+  margin-top: 11px;
+}
+#modal #-input #emptyFieldAlert {
+  color: #FF002E;
+  width: 60%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: unset;
+  margin: 50px 122px 109px 122px;
+  line-height: 26px;
+}
+nav a {
+  color: #FF002E;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: unset;
+  width: 50%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-wrap: unset;
+  gap: unset;
+}
+main img {
+  width: 50%;
+}
+main article {
+  width: 50%;
+}
+main article h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 92px;
+  text-transform: uppercase;
+}
+main article p {
+  font-size: 28px;
+  line-height: 37px;
+}
+main #submit-secret-page {
+  margin-top: 76px;
+}
+main #submit-secret-page:hover {
+  background-color: #8985A8;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="modal">
+      <div id="-input">
+        <h2>>Login</h2>
+        <div class="field-wrapper" id="user-name">
+          <input
+            type="text"
+            name="user-name-input"
+            id="user-name-input"
+            placeholder="username"
+            required
+          />
+          <p class="error-marker">*</p>
+        </div>
+        <div class="field-wrapper" id="pass-word">
+          <input
+            type="password"
+            name="pass-word-input"
+            id="pass-word-input"
+            placeholder="password"
+            required
+          />
+          <p class="error-marker">*</p>
+        </div>
+        <button type="submit" class="submit-button" id="submit-modal">
+          Submit
+        </button>
+        <p id="emptyFieldAlert"></p>
+      </div>
+    </div>
+    <nav>
+      <a href="#"><img src="./assets/img/Vector.png" alt="" /></a>
+      <div>
+        <p id="welcome-message">
+          >welcome, <span id="user-name-output">XXX</span>
+        </p>
+        <a href="" id="log-out-link">>log out</a>
+      </div>
+    </nav>
+    <main>
+      <img src="./assets/img/Illustration.png" alt="" />
+      <article>
+        <h1>Top secret</h1>
+        <p>You may not click the button.</p>
+        <!-- <a
+          class="submit-button"
+          id="submit-modal"
+          href="https://twitter.com/weirdlilguys/status/1556627285771296768?s=21&t=ZwL-kHQF2vrSUM9ndI8HgA"
+          >Secret content</a
+        > -->
+        <button
+          onclick="location.href='https://twitter.com/weirdlilguys/status/1556627285771296768?s=21&t=ZwL-kHQF2vrSUM9ndI8HgA'"
+          type="submit"
+          class="submit-button"
+          id="submit-secret-page"
+        >
+          >Secret content
+        </button>
+      </article>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
